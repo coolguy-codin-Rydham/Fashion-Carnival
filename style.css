@@ -6,11 +6,34 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   /* overflow-x:hidden ; */
+  /* background-image: url("./Assets/mainBBBGgg.svg"); */
 }
 
-a{
-    text-decoration: none;
-    color: black;
+body {
+  width: 100%;
+  height: 100%;
+  --s: 300px; /* control the size */
+  --c1: #f1f1f1;
+  --c2: #f7f7f7;
+  --c3: #ffffff;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .TopStrip {
@@ -21,221 +44,320 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x :hidden ;
+  overflow-x: hidden;
   /* display: none; */
 }
 .content1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    max-width: 80%;
-    width: 100%;    
-    overflow-x:hidden ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  max-width: 80%;
+  width: 100%;
+  overflow-x: hidden;
 }
-.InterShip{
-    color: white;
-    font-weight: 700;
-}
-
-.Cross1{
-    height: 26px;
-    width: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    padding: 10px;
-    border-radius: 50%;
+.InterShip {
+  color: white;
+  font-weight: 700;
 }
 
-.Cross1>a>img{
-    height: 12px;
-    /* width: 12px; */
-}
-.header{
-    height: 14vh;
-    width: 99vw;
-    position: absolute;
-    /* background-color: #d6d6d6; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff7e;
-    /* overflow-x:hidden; */
-
+.Cross1 {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
 }
 
-
-.contentHead{
-    max-width: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.Cross1 > a > img {
+  height: 12px;
+  /* width: 12px; */
 }
-.Part1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #565E61;
-    height: 50%;
-}
-.HelloEmail{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* justify-content: center; */
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 500;
+.header {
+  height: 14vh;
+  width: 99vw;
+  position: absolute;
+  /* background-color: #d6d6d6; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff7e;
+  /* overflow-x:hidden; */
 }
 
-.Email>a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+.contentHead {
+  max-width: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.Email>a:hover{
-    text-decoration: underline;
+.Part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #565e61;
+  height: 500%;
 }
-.Part2{
-    height: 50%;
-}
-
-.Hello{
-    width: 45%;
-}
-.Email{
-    width: 55%;
-}
-.ENUSD{
-    width: 50%;
-}
-.enusdd{
-    display: flex;
-    justify-content: end;
-    gap: 3%;
-    font-weight: 800;
-}
-.Logo{
-    height: 100%;
-    width: 50%;
-}
-.Part2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Part2>.Logo{
-    display: flex;
-    align-items: center;
-    font-size: 26px;
-}
-.Part2>.Logo>h3{
-    font-weight: 900;
+.HelloEmail {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
 }
 
-.nav{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    overflow-x:hidden ;
+.Email > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
-.NavList{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px
+.Email > a:hover {
+  text-decoration: underline;
 }
-.NavList>li{
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: 700;
+.Part2 {
+  height: 50%;
 }
 
-.svgs{
-    height: 20px;
-    width: 20px;
-    overflow: hidden;
-
+.Hello {
+  width: 45%;
+}
+.Email {
+  width: 55%;
+}
+.ENUSD {
+  width: 50%;
+}
+.enusdd {
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+  font-weight: 800;
+}
+.Logo {
+  height: 100%;
+  width: 50%;
+}
+.Part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Part2 > .Logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+.Part2 > .Logo > h3 {
+  font-weight: 900;
 }
 
-.hero{
-    height: 115vh;
-    width: 100%;
-    background-color: #BAE9FF;
-    background-image: url("./Assets/MainBG.svg");
-    background-repeat: no-repeat;
-    background-size: 100vmax;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow-x: hidden;
 }
-.heroInner{
-    max-width: 80%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    /* padding-left: 10%; */
-    /* overflow-y: hidden; */
-    /* overflow: hidden; */
-
+.NavList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.NavList > li {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 700;
 }
 
-.content2{
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 5%;
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    /* padding-left: 20%; */
+.svgs {
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
 }
 
-.f2022ff{
-    text-align: center;
-    font-size: 63px;
-    font-weight: 800;
-    width: 82.5%;
-    letter-spacing: 70px;
+.hero {
+  height: 115vh;
+  width: 100%;
+  background-color: #bae9ff;
+  background-image: url("./Assets/MainBG.svg");
+  background-repeat: no-repeat;
+  background-size: 100vmax;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.FASHION{
-    font-size: 125px;
-    line-height: 92px;
-    font-weight: 800;
+.heroInner {
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* padding-left: 10%; */
+  /* overflow-y: hidden; */
+  /* overflow: hidden; */
 }
-.ButtonDiv{
-    width: 82.5%;
-    padding: 30px;
+
+.content2 {
+  text-align: center;
+  padding-top: 10%;
+  padding-right: 5%;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  /* padding-left: 20%; */
 }
-.ButtonItself{
-    outline: none;
-    text-decoration: none;
-    border-radius: 3%;
-    /* background: transparent; */
-    border: none;
-    padding-inline: 4%;
-    padding-block: 2%;
-    background-color: #F9236E;
-    color: white;
-    font-weight: 800;
-    font-size: 110%;
+
+.f2022ff {
+  text-align: center;
+  font-size: 63px;
+  font-weight: 800;
+  width: 82.5%;
+  letter-spacing: 70px;
 }
-.Carnival{
-    color: #f9236f;
+.FASHION {
+  font-size: 125px;
+  line-height: 92px;
+  font-weight: 800;
 }
-.f2022f{
-    width: 82.5%;
-    font-weight: 700;
+.ButtonDiv {
+  width: 82.5%;
+  padding: 30px;
+}
+.ButtonItself {
+  outline: none;
+  text-decoration: none;
+  border-radius: 3%;
+  /* background: transparent; */
+  border: none;
+  padding-inline: 4%;
+  padding-block: 2%;
+  background-color: #f9236e;
+  color: white;
+  font-weight: 800;
+  font-size: 110%;
+}
+.Carnival {
+  color: #f9236f;
+}
+.f2022f {
+  width: 82.5%;
+  font-weight: 700;
+}
+
+.Part2 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.innerPart2 {
+  max-width: 80%;
+  height: 100vh;
+  width: 80%;
+  background-color: #fff;
+}
+
+.Services,
+.FashCar,
+.Featured {
+  width: 100%;
+}
+.Services {
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Featured {
+  height: 50%;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -8%;
+  scale: 1.5;
+}
+.card1 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #fff;
+}
+.card1 > h3,
+.card1 > p {
+  text-align: center;
+  color: black;
+  padding-block: 3px;
+}
+.card1 > h3 {
+  font-size: 130%;
+  font-weight: 800;
+}
+.card1 > p {
+  font-size: 70%;
+}
+
+.FashCar {
+  /* padding: 10%; */
+  height: 40%;
+  width: 100%;
+}
+.FashCarInner {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* place-items: center; */
+  padding-inline: 1%;
+}
+
+.MainInCard1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./Assets/Ladki.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-left: 8%;
+  padding-top: 10%;
+}
+
+.MainInCard2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./Assets/Ladka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-left: 8%;
+  padding-top: 10%;
+}
+
+.FASHION2 {
+  font-size: 62.5px;
+  line-height: 92px;
+  font-weight: 800;
+}
+.carni {
+    color: rgb(255, 106, 130);
 }
