@@ -5,16 +5,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  /* overflow-x:hidden ; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .TopStrip {
   background-color: #f9236e;
   height: 6vh;
-  width: 100vw;
+  width: 99vw;
   background-image: url("./Assets/Layer\ 1.svg");
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x :hidden ;
   /* display: none; */
 }
 .content1 {
@@ -24,6 +31,7 @@
     color: white;
     max-width: 80%;
     width: 100%;    
+    overflow-x:hidden ;
 }
 .InterShip{
     color: white;
@@ -47,12 +55,14 @@
 }
 .header{
     height: 14vh;
-    width: 100vw;
+    width: 99vw;
     position: absolute;
-    background-color: #d6d6d6;
+    /* background-color: #d6d6d6; */
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff7e;
+    /* overflow-x:hidden; */
 
 }
 
@@ -68,17 +78,168 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #565E61;
     height: 50%;
 }
 .HelloEmail{
     width: 50%;
     height: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
     align-items: center;
     justify-content: space-between;
+    font-weight: 500;
+}
 
+.Email>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.Email>a:hover{
+    text-decoration: underline;
 }
 .Part2{
     height: 50%;
+}
+
+.Hello{
+    width: 45%;
+}
+.Email{
+    width: 55%;
+}
+.ENUSD{
+    width: 50%;
+}
+.enusdd{
+    display: flex;
+    justify-content: end;
+    gap: 3%;
+    font-weight: 800;
+}
+.Logo{
+    height: 100%;
+    width: 50%;
+}
+.Part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Part2>.Logo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+.Part2>.Logo>h3{
+    font-weight: 900;
+}
+
+.nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow-x:hidden ;
+}
+.NavList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px
+}
+.NavList>li{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.svgs{
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+
+}
+
+.hero{
+    height: 115vh;
+    width: 100%;
+    background-color: #BAE9FF;
+    background-image: url("./Assets/MainBG.svg");
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heroInner{
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* padding-left: 10%; */
+    /* overflow-y: hidden; */
+    /* overflow: hidden; */
+
+}
+
+.content2{
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 5%;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    /* padding-left: 20%; */
+}
+
+.f2022ff{
+    text-align: center;
+    font-size: 63px;
+    font-weight: 800;
+    width: 82.5%;
+    letter-spacing: 70px;
+}
+.FASHION{
+    font-size: 125px;
+    line-height: 92px;
+    font-weight: 800;
+}
+.ButtonDiv{
+    width: 82.5%;
+    padding: 30px;
+}
+.ButtonItself{
+    outline: none;
+    text-decoration: none;
+    border-radius: 3%;
+    /* background: transparent; */
+    border: none;
+    padding-inline: 4%;
+    padding-block: 2%;
+    background-color: #F9236E;
+    color: white;
+    font-weight: 800;
+    font-size: 110%;
+}
+.Carnival{
+    color: #f9236f;
+}
+.f2022f{
+    width: 82.5%;
+    font-weight: 700;
+}
+.image2{
+    /* top: 100px; */
+    /* overflow-y: hidden; */
 }
