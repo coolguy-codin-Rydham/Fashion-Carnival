@@ -1,5 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.TopStrip {
+  background-color: #f9236e;
+  height: 6vh;
+  width: 100vw;
+  background-image: url("./Assets/Layer\ 1.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    max-width: 80%;
+    width: 100%;    
+}
+.InterShip{
+    color: white;
+    font-weight: 700;
+}
+
+.Cross1{
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.Cross1>a>img{
+    height: 12px;
+    /* width: 12px; */
+}
+.header{
+    height: 14vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.contentHead{
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.Part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    height: 50%;
+}
+.HelloEmail{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Part2{
+    height: 50%;
 }
