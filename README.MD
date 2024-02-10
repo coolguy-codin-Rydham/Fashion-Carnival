@@ -12,6 +12,6 @@ HERE IS THE LINK BRUH
 
 HERE IS THE PROCEDURE
 
-1. IN GIT CLI OR POWERSHELL TYPE (Don't forget to navigate to the folder u wanna use the  repo in) :
+1. IN GIT CLI OR POWERSHELL TYPE (Don't forget to navigate to the folder u wanna use the  repo in) : <br>
     git clone https://github.com/coolguy-codin-Rydham/Fashion-Carnival
 2. Then open the folder in vscode and use live server rest is done
