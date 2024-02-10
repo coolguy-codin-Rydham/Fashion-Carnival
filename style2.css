@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .innerpar4 {
-  max-width: 80%;
+  max-width: 70%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -174,7 +174,7 @@
 }
 
 .innerpar5{
-    max-width: 80%;
+    max-width: 70%;
     width: 100%;
     height: 100%;
     display: grid;
@@ -185,4 +185,129 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.footer{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(90deg,#f9236ebd,#f52354c4,#f42346d3)
+}
+.footerinner{
+  padding-top: 4%;
+  max-width: 70%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+}
+
+.UpperCom{
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-areas: 'About  Account Product Follow ';
+}
+.About{
+  grid-area: About;
+}
+.Account{
+  grid-area: Account;
+}
+.Product{
+  grid-area: Product;
+}
+.Follow{  
+  grid-area: Follow;
+}
+.lowerCon{
+  height: 100%;
+}
+
+.foohead{
+  font-weight: 900;
+  padding-bottom: 3%;
+  font-size: 130%;
+  color: white;
+}
+.ContentFooter{
+  color: white;
+  padding-top: 3%;
+  font-weight: 600;
+}
+
+.Address{
+  padding-top: 7%;
+}
+
+.fooinfo{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ListItem{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1%;
+  color: white;
+  font-weight: 600;
+}
+.AccountList{
+  padding-top: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+.FollowHeading{
+  padding-bottom: 1.5rem;
+}
+
+.PaymentMethods{
+  padding-top: 1.5rem;
+  color: white;
+}
+
+.PaymentMethods>h5{
+  font-size: 130%;
+  font-weight: 800;
+}
+
+.PaymentMethodsInner{
+  padding-top: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+.LastStripList{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  justify-content: space-between;
+}
+.LastStrip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lowerCom{
+  height: 100%;
+  padding: 10%;
 }
